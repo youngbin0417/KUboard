@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #define MAX 30;
 
 bool correct(const char* que) {
