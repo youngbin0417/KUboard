@@ -4,11 +4,13 @@
 bool correct(const char* que) {
 	char arr[MAX];
 	gets_s(arr, MAX);
-	if (strcmp(const char* que, const char* arr) == 0) {
+	int a = strcmp(que,arr);
+	if ( a == 0) {
 		return 1; // 두문자가 일치할 때
 	}
-	else
+	else {
 		return 0;
+	}
 }
 
 int main() {
