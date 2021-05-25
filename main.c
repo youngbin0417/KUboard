@@ -14,6 +14,13 @@ bool correct(const char* que) {
 	}
 }
 
+void score_save(const char* name, const int score) {
+	FILE* fp = fopen("점수.txt", "a");
+	fputs(name, fp);
+	fprintf(fp, " %d", score);
+	fputs("\n", fp);
+}
+
 int main() {
 	printf("hello world");
 
